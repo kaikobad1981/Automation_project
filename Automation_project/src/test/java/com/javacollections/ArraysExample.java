@@ -63,12 +63,24 @@ public class ArraysExample {
 			String names [] = {"Jalal", "Chhabed", "Franklin"};
 			System.out.println(Arrays.toString(names));
 			
+			//Can you declare Multi-Dimension Array with the numbers?
 			//Multi-Dimension Array
-			int numbers1 [] [] = {{10, 20, 30, 40, 50}, // [0] is the row and [4] is the column
-					              {60, 70, 80, 90, 100}};
-			System.out.println(numbers1[0][4]);
-			System.out.println(numbers1[0][2]);
-			System.out.println(numbers1[1][3]);
+			int numbers1 [] [] ={{10,20,30,10,25},
+			                     {60, 70, 80, 90,100}};
+			for(int j=0;j<2;j++) {
+				for(int i=0;i<5;i++) {
+					System.out.print(numbers1 [j][i]+" ");
+				}
+				System.out.println();
+			}
+					
+					               //{{10, 20, 30, 40, 50}, // [0] is the row and [4] is the column
+					              //{60, 70, 80, 90, 100}};
+//			System.out.println(numbers1[0][4]);
+//			System.out.println(numbers1[0][2]);
+//			System.out.println(numbers1[1][3]);
+			
+			//for (int i=0;i<numbers1.length;i++);
 			
 		}
 	

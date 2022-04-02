@@ -13,6 +13,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.baseclass.BaseClass;
 import com.google.common.io.Files;
+//public class CommonUtility extends BaseClass{
+//	public static void waitForElement(WebElement elem, long timeout) {
+//	WebDriverWait wait=new WebDriverWait(driver, timeout);
+//	wait.until(ExpectedConditions.elementToBeClickable(elem));
+		
+//	}
 
 public class CommonUtility extends BaseClass {
 public static WebElement getExplicitWait(WebElement elem,long time) {
@@ -36,11 +42,47 @@ public static void getHighLighter(WebElement element) {
 	executor.executeScript("arguments[0].setAttribute('style','background: green; border: 4px solid black;')", element);
 	
 }
-public static void actionClick(WebElement element) {
+public static void actionsClick(WebElement element) {
 	Actions action=new Actions(driver);  //JavascriptExecutor executor=(JavascriptExecutor)driver;
 	action.click(element).build().perform();//executor.executeScript("arguments[0].click()",element);
 	
 }
+public static void getJsClick(WebElement element) {
+	JavascriptExecutor executor = (JavascriptExecutor) driver; //Type casting
+	executor.executeScript("arguments[0].click()", element);
 	
 }
-
+}
+//
+//public static WebElement getExplicitWait(WebElement ele, long time) {
+//	WebDriverWait wait = new WebDriverWait(driver, time);
+//	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(ele));
+//	return element;
+//}
+//
+//public static void takesScreenShot() throws IOException {
+//	File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); //Type casting polymorphism
+//	File targetFile = new File(System.getProperty("user.dir") + "//screenshot/screenshot.png");
+//	targetFile.getParentFile().mkdir();
+//	srcFile.createNewFile();
+//	Files.copy(srcFile, targetFile);
+//		
+//}
+//
+//public static void getHighLighter(WebElement element) {
+//	JavascriptExecutor executor = (JavascriptExecutor) driver; //Type casting
+//	executor.executeScript("arguments[0].setAttribute('style','background: green; border: 4px solid black;')", element);
+//	
+//}
+//
+//public static void actionsClick(WebElement element) {
+//	Actions action = new Actions(driver);
+//	action.click(element).build().perform();
+//}
+//
+//
+//
+//
+//
+//
+//}

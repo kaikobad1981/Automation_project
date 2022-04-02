@@ -8,13 +8,13 @@ import io.cucumber.java.Before;
 	
    @Before 
    public void initialization() {
-  setUp("chrome");
+    setUp("chrome");
 
  }
 
    @After
    public void tearDown(){
-   driver.quit();	
+   //driver.quit();	
  
   }
  }

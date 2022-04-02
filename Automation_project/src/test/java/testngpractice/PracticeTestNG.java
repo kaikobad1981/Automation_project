@@ -24,7 +24,8 @@ import org.testng.annotations.Test;
 	@Test
 	public void openApplication() {
 		driver.get("https://www.facebook.com/");
-		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("kaikobad67@yahoo.com");
+		driver.findElement(By.xpath("//*[@id='email']")).sendKeys   
+		("kaikobad67@yahoo.com");
 	    driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("123456789");
 		driver.findElement(By.xpath("//*[@name='login']")).click();
 	}

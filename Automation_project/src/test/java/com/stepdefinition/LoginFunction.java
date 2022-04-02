@@ -26,7 +26,7 @@ public class LoginFunction  extends BaseClass{
 	
 	@Given("User can open any browser")
 	public void user_can_open_any_browser(){ 
-		  //setUp(); //representing baseclass setUp items/properties
+		 // setUp(); //representing baseclass setUp items/properties
 		  pf= PageFactory.initElements(driver, PageFactoryElements.class);
 	}
 	@Given("User is able to enter url {string}")
@@ -58,6 +58,6 @@ public class LoginFunction  extends BaseClass{
 		System.out.println("The title of the website is:"+driver.getTitle());
 	Assert.assertEquals("Sign in to Zoopla", driver.getTitle());
 		
-		//driver.quit();
+		driver.quit();
 	}
 }

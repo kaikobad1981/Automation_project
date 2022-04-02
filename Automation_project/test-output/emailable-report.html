@@ -9,13 +9,29 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">zoopla login test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,492</td><td></td><td></td></tr>
+<tr><td><a href="#t0">zoopla login test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,586</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">zoopla login test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.runner.MyRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1644187386328</td><td rowspan="1">6103</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">zoopla login test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.runner.MyRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1647636981842</td><td rowspan="1">6045</td></tr></tbody>
 </table>
-<h2>zoopla login test</h2><h3 id="m0">com.runner.MyRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User login with valid username and verify page title&quot;</td><td>&quot;Optional[User is able to login with valid username &amp; password]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Sign in to Zoopla - Zoopla] but found [Sign in to Zoopla]
-	at com.stepdefinition.LoginFunction.user_is_able_to_verify_successful_login_verify_page_title(LoginFunction.java:59)
-	at ✽.User is able to verify successful login &amp; verify page title(file:///C:/Users/Mdjalal%20Kaikobad/eclipse-workspace/Automation_project/Features/login.feature:11)
-... Removed 6 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>zoopla login test</h2><h3 id="m0">com.runner.MyRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User login with valid username and verify page title&quot;</td><td>&quot;Optional[User is able to login with valid username &amp; password]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p class=&quot;css-mx98y1-Text eczcs4p0&quot; style=&quot;background: green; border: 4px solid black;&quot;&gt;...&lt;/p&gt; is not clickable at point (1220, 52). Other element would receive the click: &lt;a href=&quot;/signin/?page_after_login=%2F&amp;amp;return_url=%2F&amp;amp;with_confirmation=true&quot; data-testid=&quot;header-profile-sign-in&quot; data-header-signin=&quot;/signin/?page_after_login={URL}&amp;amp;return_url={URL}&amp;amp;with_confirmation=true&quot; data-track-category=&quot;User Account&quot; data-track-action=&quot;clickthrough&quot; data-track-label=&quot;user account&gt;sign in&quot; class=&quot;e1ydnppz5 css-1mw8k3j-ButtonLink-Button-ButtonLinkWithIcon-ResetButtonLinkWithIcon et03gpj0&quot; data-ajax=&quot;false&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=99.0.4844.74)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R6ICANP&apos;, ip: &apos;192.168.1.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\MDJALA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f23d4af5d036c441f2667ad5552a0246
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at com.stepdefinition.LoginFunction.user_clicks_on_the_login_in_button(LoginFunction.java:41)
+	at ✽.User clicks on the Login in button(file:///C:/Users/Mdjalal%20Kaikobad/git/repository/Automation_project/Features/login.feature:8)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -18,7 +18,7 @@ public class CopyString {
 		}
 		
 		
-	}
+}
 
 //		//rules of copy of String
 //		String x= "kaikobad";//String variable
@@ -35,4 +35,8 @@ public class CopyString {
 //	}
 //
 //}
+//String name="abcdefgh";
+//char[]  nm=name.toCharArray();
+//for(int i =(nm.length)-1;i>=0;i--){
+//System.out.print(nm[i]);
 
